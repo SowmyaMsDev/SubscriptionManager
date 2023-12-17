@@ -49,7 +49,7 @@ class CustomerTest {
 
         // When a customer subscribes to NetFlix basic plan starting in May and Paramount exclusive plan starting in September
         assertTrue(sut.subscribe("netflix", toDate("20230501"), MonthlySubscription.PriceLevel.Basic));
-        assertTrue(sut.subscribe("paramount", toDate("20230509"), MonthlySubscription.PriceLevel.Exclusive));
+        assertTrue(sut.subscribe("paramount", toDate("20230905"), MonthlySubscription.PriceLevel.Exclusive));
 
         // Then the total price of the subscriptions of the customer should be the price of a basic plan + the price of a premium plan
         final int expectedTotalPrice = pricingPolicy.getPrice(MonthlySubscription.PriceLevel.Basic) + pricingPolicy.getPrice(MonthlySubscription.PriceLevel.Exclusive);
