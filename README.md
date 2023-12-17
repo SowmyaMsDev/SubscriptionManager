@@ -2,6 +2,10 @@
 
 John Doe has left the project, and he didn't finish his work.
 
+You will take on his work!
+
+For some legal reason, you may use Google Search to do the work but not any LLM AI based tool.
+
 ## Your first task
 
 - Create a new Git branch named __<your first name>_FixTest___
